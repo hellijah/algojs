@@ -24,6 +24,7 @@ function merge(left, right, countComparisons) {
   }
 
   return [...sortedArray, ...left.slice(i), ...right.slice(j)];
+  return { sortedArray: sortedArray, countComparisons: countComparisons };
 }
 
 module.exports = mergeSort;

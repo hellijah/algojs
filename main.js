@@ -17,5 +17,5 @@ fs.readFile(fileName, 'utf8', (error, data) => {
     console.log('Nombres lus:', numbers);
 
     const merge = mergeSort(numbers.slice());
-    console.log(`Tri fusion: ${merge.countComparisons} comparaisons - ${merge.sortedArray}`);
+    console.log(`Tri fusion: ${merge.countComparisons.count} comparaisons // ${merge.sortedArray}`);
 });
