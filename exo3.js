@@ -1,6 +1,6 @@
 function findPair(nums, k) {
   let seen = new Set();
-  for (const num of nums) {
+  for (const num of nums) { // idem boucle normale   for (let i = 0; i < nums.length; i++) {
     if (seen.has(k - num)) {
       return true;
     }
